@@ -7,10 +7,32 @@
 
     {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrap">
-      {{ content }}
+    <div class="page-content container">
+
+      <h2>Experience and Activities</h2>
+
+      <div class="row experience-container">
+
+        <div class="col-xs-1 timeline-container">
+          <div class="timeline-line"></div>
+          <div class="timeline-marker"></div>
+        </div>
+
+        <div class="col-xs-7 content-container">
+          <h3>Presentation at WaterlUX</h3>
+          <em><small>Jan 2014, University of Waterloo</small></em>
+          <p>
+            Gave a talk about how to set up your own basic site from start to end, from server and domain to the frontend themes/tools and showcasing all the options people can use without needing to be experts in certain frameworks and dev.
+            Link to Slides.
+          </p>
+        </div>
+
+        <div class="col-xs-4 preview-container">
+          <img>
+        </div>
+
       </div>
+
     </div>
 
     {% include footer.html %}
