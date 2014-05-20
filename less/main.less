@@ -2,15 +2,18 @@
 @import "_variables_override";
 @import "_parallax-scroll";
 
-// helpers
+// layout
 //
+p {
+  line-height: 1.8;
+}
 
 // decorative
 
 .hr-decorative {
   border-color: @brand-secondary;
   margin-bottom: 40px;
-  width: 50px;
+  width: 100px;
 
   &:after {
     content: '';
@@ -24,7 +27,7 @@
 
 // type
 h2 {
-  font-size: 18px;
+  font-size: 30px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -36,7 +39,9 @@ h3 {
 }
 
 h4 {
-  font-size: 12px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  line-height: 3;
 }
 
 // layout
@@ -84,7 +89,7 @@ body {
 
 .experience-container {
   position: relative;
-  height: 50%;
+  height: 60%;
   background-repeat: repeat;
   background-color: @gray-darker;
   color: @white;
@@ -116,11 +121,13 @@ body {
 .mathnews-experience .preview-container { background-image: url(/img/enigma/mathnews-desktop-lg.png); }
 .velocity-experience .preview-container { background-image: url(/img/enigma/velocity-desktop-lg.png); }
 
-.wanderable-experience { background-color: #04756F; background-image: none;}
-.cusec-experience { background-color: #2F7100; background-image: none;}
-.indochino-experience { background-color: #2098FF; background-image: none;}
-.mathnews-experience { background-color: #D90000; background-image: none;}
-.velocity-experience { background-color: #00042E; background-image: none;}
+/*
+.wanderable-experience { background-color: #047878; background-image: none;}
+.cusec-experience { background-color: #174f5e; background-image: none;}
+.indochino-experience { background-color: #4a3141; background-image: none;}
+.mathnews-experience { background-color: #58092c; background-image: none;}
+.velocity-experience { background-color: #144553; background-image: none;}
+*/
 
 .mathnews-experience {
   .preview-container {
@@ -134,7 +141,7 @@ body {
   width: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% top;
+  //background-position: 50% top;
 }
 
 // timeline
@@ -154,4 +161,10 @@ body {
   margin-left: -8px;
   margin-top: 15px;
   background: @gray-lighter;
+}
+
+// footer
+.site-footer {
+  background: @black;
+  padding: 20px 0 10px 0;
 }
