@@ -31,7 +31,8 @@ h2 {
 
 h3 {
   font-family: 'Raleway', sans-serif;
-  font-size: 16px;
+  font-size: 30px;
+  line-height: 1.5;
 }
 
 h4 {
@@ -51,11 +52,18 @@ body {
   background-image: url(/img/enigma/header-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100%;
 }
 
 .header-content {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.header-content-wrapper {
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .site-title {
@@ -70,25 +78,63 @@ body {
 
 // experience section
 .page-experience {
-  margin-top: 40px;
   margin-bottom: 40px;
+  height: 100%;
 }
 
 .experience-container {
   position: relative;
-  padding: 30px 0;
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 50%;
+  background-repeat: repeat;
+  background-color: @gray-darker;
+  color: @white;
+
+  &.even {
+    .preview-container {
+      .pull-left;
+    }
+  }
 }
 
-.indochino-experience { background-image: url(/img/enigma/indochino-bg.png); }
-.wanderable-experience { background-image: url(/img/enigma/wanderable-bg.png); }
-.velocity-experience { background-image: url(/img/enigma/velocity-bg.png); }
+.experience-text-content {
+  display: table;
+  padding: 0 40px;
+  width: 50%;
+  height: 100%;
+}
 
-.exp-preview {
-  //border: 1px solid @gray-lighter;
-  padding: 20px;
-  width: 300px;
+.experience-text-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.experience-container { background-image: url(/img/burried.png); }
+.waterlux-experience { background-image: none; }
+.wanderable-experience .preview-container { background-image: url(/img/enigma/wanderable-desktop-lg.png); }
+.cusec-experience .preview-container { background-image: url(/img/enigma/cusec-desktop-lg.png); }
+.indochino-experience .preview-container { background-image: url(/img/enigma/indochino-desktop-lg.png); }
+.mathnews-experience .preview-container { background-image: url(/img/enigma/mathnews-desktop-lg.png); }
+.velocity-experience .preview-container { background-image: url(/img/enigma/velocity-desktop-lg.png); }
+
+.wanderable-experience { background-color: #04756F; background-image: none;}
+.cusec-experience { background-color: #2F7100; background-image: none;}
+.indochino-experience { background-color: #2098FF; background-image: none;}
+.mathnews-experience { background-color: #D90000; background-image: none;}
+.velocity-experience { background-color: #00042E; background-image: none;}
+
+.mathnews-experience {
+  .preview-container {
+    background-position: 0 center;
+  }
+}
+
+.preview-container {
+  padding: 0;
+  height: 100%;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% top;
 }
 
 // timeline

@@ -1,14 +1,13 @@
 ---
 experiences:
- - title: Presentation at WaterlUX
-   date-and-loc: Jan 2014, University of Waterloo
-   desc: Gave a talk about how to set up your own basic site from start to end, from server and domain to the frontend themes/tools and showcasing all the options people can use without needing to be experts in certain frameworks and dev. Link to Slides.
-   img: /img/enigma/waterlux-talk.png
-   classname: waterlux
+# - title: Presentation at WaterlUX
+#   date-and-loc: Jan 2014, University of Waterloo
+#   desc: Gave a talk about how to set up your own basic site from start to end, from server and domain to the frontend themes/tools and showcasing all the options people can use without needing to be experts in certain frameworks and dev. Link to Slides.
+#   classname: waterlux
  - title: Software Engineer at Wanderable
    date-and-loc: Jan - Apr 2014, Redwood City, California
    desc: Launched a responsive site redesign that increased mobile signup conversion by 80%. Decreased site load time by upwards of 35% by upgrading site architecture to support asset precompilation and caching. Created a Merchant self-service portal to optimize the process of partnerships with international activity providers, directly contributing to an increase in product margin.
-   img: /img/enigma/wanderable-desktop.png
+   img: /img/enigma/wanderable.png
    classname: wanderable
  - title: CUSEC (Canadian University Software Engineering Conference)
    date-and-loc: Aug 2013 - Present
@@ -41,45 +40,38 @@ experiences:
 
     {% include header.html %}
 
-    <div class="page-experience">
-
-      <div class="container">
-        <h2 class="text-center">Experience and Activities</h2>
-        <hr class="hr-decorative">
-      </div>
-
-
+    <div class="page-experience container-fluid">
       {% for exp in page.experiences %}
-      <div class="row experience-container {{ exp.classname }}-experience parallax-scroll">
+        {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
 
-        <div class="container">
+        <div class="row experience-container {{ exp.classname }}-experience">
 
-          <div class="timeline-container">
-            <div class="timeline-line"></div>
-            <div class="timeline-marker"></div>
-          </div>
-
-          <div class="col-xs-7 col-xs-push-1">
-            <h3>{{ exp.title }}</h3>
-            <p class="experience-date">
-              <em><small>{{ exp.date-and-loc }}</small></em>
-            </p>
-            <p class="experience-desc">
-              {{ exp.desc }}
-            </p>
-          </div>
-
-          <div class="col-xs-4 col-xs-push-1 preview-container">
             {% if exp.img %}
-            <img class="exp-preview" src="{{ exp.img }}">
+            <div class="experience-text-content {% if thecycle == 'odd' %} pull-left {% else %} pull-right {% endif %}">
+            {% else %}
+            <div class="col-xs-12 experience-text-content">
+            {% endif %}
+
+              <div class="experience-text-wrapper">
+                <h3>{{ exp.title }}</h3>
+                <p class="experience-date">
+                  <em><small>{{ exp.date-and-loc }}</small></em>
+                </p>
+                <p class="experience-desc">
+                  {{ exp.desc }}
+                </p>
+              </div>
+
+            </div>
+
+            {% if exp.img %}
+            <div class="preview-container {% if thecycle == 'odd' %} pull-right {% else %} pull-left {% endif %}">
+              <!-- <img class="experience-preview-img" src="{{ exp.img }}"> -->
+            </div>
             {% endif %}
           </div>
 
-      </div>
-
-      </div>
       {% endfor %}
-
     </div>
 
     {% include footer.html %}

@@ -2070,6 +2070,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/burried.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 48944,
+		"inputAbbreviatedPath": "\/img\/burried.png",
+		"outputAbbreviatedPath": "\/img\/burried.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/enigma\/CUSEC-2014.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2103,6 +2114,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/enigma\/indochino-bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 91965,
+		"inputAbbreviatedPath": "\/img\/enigma\/indochino-bg.png",
+		"outputAbbreviatedPath": "\/img\/enigma\/indochino-bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/enigma\/indochino.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2114,13 +2136,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/enigma\/tile.png": {
+	"\/img\/enigma\/velocity-bg.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 122456,
-		"inputAbbreviatedPath": "\/img\/enigma\/tile.png",
-		"outputAbbreviatedPath": "\/img\/enigma\/tile.png",
+		"initialSize": 108265,
+		"inputAbbreviatedPath": "\/img\/enigma\/velocity-bg.png",
+		"outputAbbreviatedPath": "\/img\/enigma\/velocity-bg.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2132,6 +2154,28 @@
 		"initialSize": 67208,
 		"inputAbbreviatedPath": "\/img\/enigma\/velocity.png",
 		"outputAbbreviatedPath": "\/img\/enigma\/velocity.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/enigma\/wanderable-bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 122456,
+		"inputAbbreviatedPath": "\/img\/enigma\/wanderable-bg.png",
+		"outputAbbreviatedPath": "\/img\/enigma\/wanderable-bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/enigma\/wanderable-desktop-lg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.42143e+06,
+		"inputAbbreviatedPath": "\/img\/enigma\/wanderable-desktop-lg.png",
+		"outputAbbreviatedPath": "\/img\/enigma\/wanderable-desktop-lg.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2165,6 +2209,17 @@
 		"initialSize": 11416,
 		"inputAbbreviatedPath": "\/img\/enigma\/wanderable-iphone.png",
 		"outputAbbreviatedPath": "\/img\/enigma\/wanderable-iphone.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/enigma\/wanderable.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 340398,
+		"inputAbbreviatedPath": "\/img\/enigma\/wanderable.png",
+		"outputAbbreviatedPath": "\/img\/enigma\/wanderable.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2217,6 +2272,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/min\/main-ck.js",
 		"outputAbbreviatedPath": "\/js\/min\/min\/main-ck-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/min\/parallax-scrolling-ck.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/min\/parallax-scrolling-ck.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/parallax-scrolling-ck-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
