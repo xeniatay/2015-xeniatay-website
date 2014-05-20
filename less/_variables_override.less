@@ -18,6 +18,11 @@
 @brand-tertiary:        #CF423C;
 @brand-forthly:         #FC7D49;
 @brand-fiftly:          #FFD462;
+
+//== Additional Colors
+@white: #FFFFFF;
+@gray-lightest: #EFEFEF;
+
 //
 //
 //== Scaffolding
@@ -45,7 +50,7 @@
 //@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 //@font-family-base:        @font-family-sans-serif;
 //
-//@font-size-base:          14px;
+@font-size-base:            13px;
 //@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 //@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 //
@@ -827,3 +832,43 @@
 //
 //** Horizontal offset for forms and lists.
 //@component-offset-horizontal: 180px;
+
+//== Additional Variables
+
+//== Additional responsive variables
+//
+@screen-phone-max: @screen-xs-max;
+@screen-tablet-max: @screen-sm-max;
+@screen-desktop-max: @screen-md-max;
+
+/* Responsive Variable Values (see below)
+//@screen-phone-max: 767px;
+//@screen-tablet-max: 991px;
+//@screen-desktop-max: 1199px;
+//
+//@phone-v: (max-width: 319px); // phone-vertical
+//@phone-h: (min-width: 320px) and (max-width: 479px); // phone-horizontal
+//@phone: (max-width: 479px);
+//@tablet: (min-width: 480px) and (max-width: 767px);
+//@desktop: (min-width: 768px) and (max-width: 991px);
+//@desktop-lg: (min-width: 992px);
+//
+//@lt-tablet: (max-width: 479px); // less than tablet
+//@lt-desktop: (max-width: 767px); // less than dekstop
+//@lt-desktop-lg: (max-width: 991px); // less than desktop-large
+//
+//@desktop-only: (min-width: 768px);
+*/
+
+@phone-v: ~"(max-width: 319px)";
+@phone-h: ~"(min-width: 320px) and (max-width: 479px)";
+@phone: ~"(max-width: 479px)";
+@tablet: ~"(min-width: @{screen-xs}) and (max-width: @{screen-xs-max})";
+@desktop: ~"(min-width: @{screen-sm}) and (max-width: @{screen-sm-max})";
+@desktop-lg: ~"(min-width: @{screen-desktop})";
+
+@lt-tablet: @phone; // max-width: 479px;
+@lt-desktop: ~"(max-width: @{screen-xs-max})";
+@lt-desktop-lg: ~"(max-width: @{screen-md-max})";
+
+@desktop-only: ~"(min-width: @{screen-sm})";

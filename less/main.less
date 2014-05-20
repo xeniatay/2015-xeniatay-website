@@ -1,17 +1,15 @@
 @import "../bower_components/bootstrap/less/bootstrap";
 @import "_variables_override";
+@import "_parallax-scroll";
 
 // helpers
 //
-.text-center {
-  text-align: center;
-}
 
 // decorative
 
 .hr-decorative {
   border-color: @brand-secondary;
-  margin-top: 40px;
+  margin-bottom: 40px;
   width: 50px;
 
   &:after {
@@ -26,15 +24,88 @@
 
 // type
 h2 {
-  font-size: 12px;
+  font-size: 18px;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 
 h3 {
   font-family: 'Raleway', sans-serif;
+  font-size: 16px;
 }
 
 h4 {
   font-size: 12px;
+}
+
+// layout
+//
+
+// header
+html,
+body {
+  height: 100%;
+}
+
+.header-bg {
+  background-image: url(/img/enigma/header-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.site-title {
+  height: 73px;
+  overflow: hidden;
+  text-indent: -10000px;
+  background-image: url(/img/enigma/XENIA-TAY.png);
+  background-repeat: no-repeat;
+  background-size: 533px 73px;
+  background-position: center;
+}
+
+// experience section
+.page-experience {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.experience-container {
+  position: relative;
+  padding: 30px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.indochino-experience { background-image: url(/img/enigma/indochino-bg.png); }
+.wanderable-experience { background-image: url(/img/enigma/wanderable-bg.png); }
+.velocity-experience { background-image: url(/img/enigma/velocity-bg.png); }
+
+.exp-preview {
+  //border: 1px solid @gray-lighter;
+  padding: 20px;
+  width: 300px;
+}
+
+// timeline
+.timeline-container {
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  margin-left: 60px;
+  background: @gray-lighter;
+}
+
+.timeline-marker {
+  height: 20px;
+  width: 20px;
+  border: 3px solid @brand-secondary;
+  border-radius: 50%;
+  margin-left: -8px;
+  margin-top: 15px;
+  background: @gray-lighter;
 }

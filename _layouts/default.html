@@ -1,3 +1,37 @@
+---
+experiences:
+ - title: Presentation at WaterlUX
+   date-and-loc: Jan 2014, University of Waterloo
+   desc: Gave a talk about how to set up your own basic site from start to end, from server and domain to the frontend themes/tools and showcasing all the options people can use without needing to be experts in certain frameworks and dev. Link to Slides.
+   img: /img/enigma/waterlux-talk.png
+   classname: waterlux
+ - title: Software Engineer at Wanderable
+   date-and-loc: Jan - Apr 2014, Redwood City, California
+   desc: Launched a responsive site redesign that increased mobile signup conversion by 80%. Decreased site load time by upwards of 35% by upgrading site architecture to support asset precompilation and caching. Created a Merchant self-service portal to optimize the process of partnerships with international activity providers, directly contributing to an increase in product margin.
+   img: /img/enigma/wanderable-desktop.png
+   classname: wanderable
+ - title: CUSEC (Canadian University Software Engineering Conference)
+   date-and-loc: Aug 2013 - Present
+   desc: Director of Sponsorship for CUSEC 2015. Built 2014.cusec.net and pioneered a resume upload tool that collected hundreds of student resumes for 18 sponsor companies in advance of the event.
+   img: /img/enigma/CUSEC-2014.png
+   classname: cusec
+ - title: Front End Engineer at Indochino
+   date-and-loc: May - Aug 2013, Vancouver, British Columbia
+   desc: Worked in a 2-person Front End team to maintain and optimize the entire e-commerce platform. Implented a filter-and-sort system on shopping pages that reduced barriers to conversion. Launched seasonal ‘Collection Lookbooks’ which drove 100’s of thousands of dollars in revenue.
+   img: /img/enigma/indochino.png
+   classname: indochino
+ - title: "<strong>MATH</strong><em>news</em>: Comic Illustration"
+   date-and-loc: July 2012
+   desc: "<strong>MATH</strong><em>news</em> is UW’s Math Student Newspaper. Inspired by a campus-wide game of Humans VS Zombies, I illustrated some dramatic events that transpired — starring me as the main character."
+   img: /img/enigma/hvz.png
+   classname: mathnews
+ - title: Freelance Developer for Velocity
+   date-and-loc: May 2012 - Dec 2013
+   desc: "Velocity is UW’s Entrepreneurial Initiative. From May - Aug 2012, I worked on a redesign of the website and launched an implementation that led to a dramatic rise in monthly site visits: from 12,000 to 30,000. The site was live from August 2012 to December 2013."
+   img: /img/enigma/velocity.png
+   classname: velocity
+---
+
 <!DOCTYPE html>
 <html>
 
@@ -7,31 +41,44 @@
 
     {% include header.html %}
 
-    <div class="page-content container">
+    <div class="page-experience">
 
-      <h2>Experience and Activities</h2>
+      <div class="container">
+        <h2 class="text-center">Experience and Activities</h2>
+        <hr class="hr-decorative">
+      </div>
 
-      <div class="row experience-container">
 
-        <div class="col-xs-1 timeline-container">
-          <div class="timeline-line"></div>
-          <div class="timeline-marker"></div>
-        </div>
+      {% for exp in page.experiences %}
+      <div class="row experience-container {{ exp.classname }}-experience parallax-scroll">
 
-        <div class="col-xs-7 content-container">
-          <h3>Presentation at WaterlUX</h3>
-          <em><small>Jan 2014, University of Waterloo</small></em>
-          <p>
-            Gave a talk about how to set up your own basic site from start to end, from server and domain to the frontend themes/tools and showcasing all the options people can use without needing to be experts in certain frameworks and dev.
-            Link to Slides.
-          </p>
-        </div>
+        <div class="container">
 
-        <div class="col-xs-4 preview-container">
-          <img>
-        </div>
+          <div class="timeline-container">
+            <div class="timeline-line"></div>
+            <div class="timeline-marker"></div>
+          </div>
+
+          <div class="col-xs-7 col-xs-push-1">
+            <h3>{{ exp.title }}</h3>
+            <p class="experience-date">
+              <em><small>{{ exp.date-and-loc }}</small></em>
+            </p>
+            <p class="experience-desc">
+              {{ exp.desc }}
+            </p>
+          </div>
+
+          <div class="col-xs-4 col-xs-push-1 preview-container">
+            {% if exp.img %}
+            <img class="exp-preview" src="{{ exp.img }}">
+            {% endif %}
+          </div>
 
       </div>
+
+      </div>
+      {% endfor %}
 
     </div>
 
