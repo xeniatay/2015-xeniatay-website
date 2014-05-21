@@ -2,33 +2,43 @@
 experiences:
 # - title: Presentation at WaterlUX
 #   date-and-loc: Jan 2014, University of Waterloo
-#   desc: Gave a talk about how to set up your own basic site from start to end, from server and domain to the frontend themes/tools and showcasing all the options people can use without needing to be experts in certain frameworks and dev. Link to Slides.
+#   desc: Presentation blurb: How to set up a basic site: from start to end, answering all your questions about domain, server, and Front End resources available for use. Link to Slides.
 #   classname: waterlux
- - title: Software Engineer at Wanderable
+ - title: "Software Engineer at <a href='http://wanderable.com' title='Wanderable'>Wanderable</a>"
    date-and-loc: Jan - Apr 2014, Redwood City, California
-   desc: Launched a responsive site redesign that increased mobile signup conversion by 80%. Decreased site load time by upwards of 35% by upgrading site architecture to support asset precompilation and caching. Created a Merchant self-service portal to optimize the process of partnerships with international activity providers, directly contributing to an increase in product margin.
-   img: /img/enigma/wanderable.png
+   desc: Launched a responsive site redesign that increased mobile signup conversion by 80%. Optimized size load time by upwards of 35% through asset precompilation and caching. Created a Merchant self-service portal to optimize the process of partnerships with international activity providers, directly contributing to an increase in product margin.
+   img: /img/enigma/wanderable-desktop-lg.png
+   img-alt: Wanderable Preview
    classname: wanderable
- - title: CUSEC (Canadian University Software Engineering Conference)
-   date-and-loc: Aug 2013 - Present
-   desc: Director of Sponsorship for CUSEC 2015. Built 2014.cusec.net and pioneered a resume upload tool that collected hundreds of student resumes for 18 sponsor companies in advance of the event.
-   img: /img/enigma/CUSEC-2014.png
+   link: http://wanderable.com
+ - title: "<a href='http://2014.cusec.net' title='CUSEC 2014'>CUSEC 2014</a> & 2015"
+   date-and-loc: Aug 2013 - Present, Canadian University Software Engineering Conference in Montreal, Quebec
+   desc: "Director of Sponsorship for CUSEC 2015. Webmaster for CUSEC 2014: built <a href='http://2014.cusec.net' title='CUSEC 2014'>2014.cusec.net</a> and pioneered a resume upload tool that collected hundreds of student resumes for 18 sponsor companies in advance of the event."
+   img: /img/enigma/cusec-desktop-lg.png
+   img-alt: CUSEC 2014 Preview
    classname: cusec
- - title: Front End Engineer at Indochino
+   link: http://2014.cusec.net
+ - title: "Front End Engineer at <a href='http://www.indochino.com' title='Indochino'>Indochino</a>"
    date-and-loc: May - Aug 2013, Vancouver, British Columbia
    desc: Worked in a 2-person Front End team to maintain and optimize the entire e-commerce platform. Implented a filter-and-sort system on shopping pages that reduced barriers to conversion. Launched seasonal ‘Collection Lookbooks’ which drove 100’s of thousands of dollars in revenue.
-   img: /img/enigma/indochino.png
+   img: /img/enigma/indochino-desktop-lg.png
+   img-alt: Indochino Essentials Collection Preview
    classname: indochino
+   link: http://indochino.com
  - title: "<strong>MATH</strong><em>news</em>: Comic Illustration"
-   date-and-loc: July 2012
-   desc: "<strong>MATH</strong><em>news</em> is UW’s Math Student Newspaper. Inspired by a campus-wide game of Humans VS Zombies, I illustrated some dramatic events that transpired — starring me as the main character."
-   img: /img/enigma/hvz.png
+   date-and-loc: July 2012, University of Waterloo
+   desc: "Comic illustration of the dramatic events that transpired during a campus-wide game of Human VS. Zombies."
+   img: /img/enigma/mathnews-desktop-lg.png
+   img-alt: Humans VS Zombies Comic Preview
    classname: mathnews
- - title: Freelance Developer for Velocity
-   date-and-loc: May 2012 - Dec 2013
-   desc: "Velocity is UW’s Entrepreneurial Initiative. From May - Aug 2012, I worked on a redesign of the website and launched an implementation that led to a dramatic rise in monthly site visits: from 12,000 to 30,000. The site was live from August 2012 to December 2013."
-   img: /img/enigma/velocity.png
+   link: /img/hvz.jpg
+ - title: "Freelance Developer for <a href='http://velocity.uwaterloo.ca' title='Velocity'>Velocity</a>"
+   date-and-loc: "May 2012 - Dec 2013, Velocity: UW's Entrepreneurial Initiative"
+   desc: "Worked on Velocity's website redesign from May - Aug 2012. The refreshed site led to a dramatic rise in monthly site visits: from 12,000 to 30,000. The site was live from August 2012 to December 2013."
+   img: /img/enigma/velocity-desktop-lg.png
+   img-alt: Velocity Website Preview
    classname: velocity
+   link: http://velocity.uwaterloo.ca
 ---
 
 <!DOCTYPE html>
@@ -53,11 +63,11 @@ experiences:
             {% endif %}
 
               <div class="experience-text-wrapper">
-                <h3>{{ exp.title }}</h3>
+                <h3 class="experience-title">{{ exp.title }}</h3>
                 <p class="experience-date">
                   <em><small>{{ exp.date-and-loc }}</small></em>
                 </p>
-                <p class="experience-desc">
+                <p class="experience-desc hidden-xs">
                   {{ exp.desc }}
                 </p>
               </div>
@@ -66,7 +76,9 @@ experiences:
 
             {% if exp.img %}
             <div class="preview-container {% if thecycle == 'odd' %} pull-right {% else %} pull-left {% endif %}">
-              <!-- <img class="experience-preview-img" src="{{ exp.img }}"> -->
+              <a href="{{ exp.link }}" title="{{ exp.img-alt }}">
+                <img class="experience-preview-img" src="{{ exp.img }}" alt="{{ exp.img-alt }}">
+              </a>
             </div>
             {% endif %}
           </div>

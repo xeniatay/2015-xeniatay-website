@@ -2081,13 +2081,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/enigma\/CUSEC-2014.png": {
+	"\/img\/enigma\/cusec-desktop-lg.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 85506,
-		"inputAbbreviatedPath": "\/img\/enigma\/CUSEC-2014.png",
-		"outputAbbreviatedPath": "\/img\/enigma\/CUSEC-2014.png",
+		"inputAbbreviatedPath": "\/img\/enigma\/cusec-desktop-lg.png",
+		"outputAbbreviatedPath": "\/img\/enigma\/cusec-desktop-lg.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2096,7 +2096,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1.4786e+06,
+		"initialSize": 930576,
 		"inputAbbreviatedPath": "\/img\/enigma\/header-bg.png",
 		"outputAbbreviatedPath": "\/img\/enigma\/header-bg.png",
 		"outputPathIsOutsideProject": 0,
@@ -2125,6 +2125,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/enigma\/indochino-desktop-lg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6.29146e+06,
+		"inputAbbreviatedPath": "\/img\/enigma\/indochino-desktop-lg.png",
+		"outputAbbreviatedPath": "\/img\/enigma\/indochino-desktop-lg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/enigma\/indochino.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2136,6 +2147,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/enigma\/mathnews-desktop-lg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.86851e+06,
+		"inputAbbreviatedPath": "\/img\/enigma\/mathnews-desktop-lg.png",
+		"outputAbbreviatedPath": "\/img\/enigma\/mathnews-desktop-lg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/enigma\/velocity-bg.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2143,6 +2165,17 @@
 		"initialSize": 108265,
 		"inputAbbreviatedPath": "\/img\/enigma\/velocity-bg.png",
 		"outputAbbreviatedPath": "\/img\/enigma\/velocity-bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/enigma\/velocity-desktop-lg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 424706,
+		"inputAbbreviatedPath": "\/img\/enigma\/velocity-desktop-lg.png",
+		"outputAbbreviatedPath": "\/img\/enigma\/velocity-desktop-lg.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2242,6 +2275,17 @@
 		"initialSize": 8829,
 		"inputAbbreviatedPath": "\/img\/enigma\/XENIA-TAY.png",
 		"outputAbbreviatedPath": "\/img\/enigma\/XENIA-TAY.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/header-bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 484948,
+		"inputAbbreviatedPath": "\/img\/header-bg.png",
+		"outputAbbreviatedPath": "\/img\/header-bg.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2373,7 +2417,7 @@
 		"outputAbbreviatedPath": "\/css\/main.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
+		"outputStyle": 0,
 		"relativeURLS": 0,
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,

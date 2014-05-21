@@ -4,6 +4,20 @@
 
 // layout
 //
+body {
+  @media @phone {
+    font-size: 8px;
+  }
+
+  @media @tablet {
+    font-size: 10px;
+  }
+
+  @media @desktop {
+    font-size: 12px;
+  }
+}
+
 p {
   line-height: 1.8;
 }
@@ -14,6 +28,11 @@ p {
   border-color: @brand-secondary;
   margin-bottom: 40px;
   width: 100px;
+
+  @media @lt-desktop-lg {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
   &:after {
     content: '';
@@ -30,18 +49,54 @@ h2 {
   font-size: 30px;
   letter-spacing: 2px;
   text-transform: uppercase;
+
+  @media @phone {
+    font-size: 12px;
+  }
+
+  @media @tablet {
+    font-size: 15px;
+  }
+
+  @media @desktop {
+    font-size: 20px;
+  }
 }
 
 h3 {
   font-family: 'Raleway', sans-serif;
   font-size: 30px;
   line-height: 1.5;
+
+  @media @phone {
+    font-size: 12px;
+  }
+
+  @media @tablet {
+    font-size: 15px;
+  }
+
+  @media @desktop {
+    font-size: 20px;
+  }
 }
 
 h4 {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   line-height: 3;
+
+  @media @phone {
+    font-size: 10px;
+  }
+
+  @media @tablet {
+    font-size: 13px;
+  }
+
+  @media @desktop {
+    font-size: 15px;
+  }
 }
 
 // layout
@@ -58,6 +113,14 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
+
+  @media @phone {
+    height: 420px;
+  }
+
+  @media @tablet {
+    height: 600px;
+  }
 }
 
 .header-content {
@@ -79,6 +142,85 @@ body {
   background-repeat: no-repeat;
   background-size: 533px 73px;
   background-position: center;
+
+  @media @lt-desktop {
+    background-size: contain;
+  }
+}
+
+// SoMe icons
+.some-icon-link {
+  .transition(.2s width ease-in-out);
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+  width: 19%;
+
+  @media @phone {
+    width: 30%;
+  }
+
+  &:after {
+    .transition(.5s opacity ease-in-out);
+    content: attr(title);
+    opacity: 0;
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 1px;
+  }
+
+  &:hover {
+    text-decoration: none;
+    color: @black;
+
+    &:after {
+      opacity: 1;
+    }
+
+    .some-icon {
+      .rotate(360deg);
+    }
+  }
+
+}
+
+.some-icon-wrapper {
+  display: table;
+  padding: 60px 0 20px 0;
+  margin: 0 auto;
+  opacity: 0.3;
+
+  @media @lt-desktop {
+    padding: 20px 0 10px;
+  }
+}
+
+.some-icon {
+  .rotate-setup(1.2s);
+  display: table-cell;
+  vertical-align: middle;
+}
+
+// icon rotation animation
+.rotate-setup(@dur: 0.8s) {
+    -webkit-transition-duration: @dur;
+    -moz-transition-duration: @dur;
+    -o-transition-duration: @dur;
+    transition-duration: @dur;
+
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+
+    overflow: hidden;
+}
+
+.rotate (@deg: 180deg) {
+    -webkit-transform: rotate(@deg);
+    -moz-transform: rotate(@deg);
+    -o-transform: rotate(@deg);
 }
 
 // experience section
@@ -88,53 +230,50 @@ body {
 }
 
 .experience-container {
+  .transition(.2s all ease-in-out);
   position: relative;
-  height: 60%;
+  height: 75%;
   background-repeat: repeat;
-  background-color: @gray-darker;
-  color: @white;
+  background-color: @black;
+  color: @gray;
+
+  @media @phone {
+    height: 150px;
+  }
+
+  @media @tablet {
+    height: 250px;
+  }
+
+  @media @desktop {
+    height: 50%;
+  }
 
   &.even {
     .preview-container {
       .pull-left;
     }
   }
-}
 
-.experience-text-content {
-  display: table;
-  padding: 0 40px;
-  width: 50%;
-  height: 100%;
-}
+  .hr-decorative {
+    margin-bottom: 20px;
+    margin-left: 0;
+    width: 50px;
+    border-color: @gray;
 
-.experience-text-wrapper {
-  display: table-cell;
-  vertical-align: middle;
-}
+    @media @lt-desktop {
+      margin-bottom: 15px;
+    }
 
-.experience-container { background-image: url(/img/burried.png); }
-.waterlux-experience { background-image: none; }
-.wanderable-experience .preview-container { background-image: url(/img/enigma/wanderable-desktop-lg.png); }
-.cusec-experience .preview-container { background-image: url(/img/enigma/cusec-desktop-lg.png); }
-.indochino-experience .preview-container { background-image: url(/img/enigma/indochino-desktop-lg.png); }
-.mathnews-experience .preview-container { background-image: url(/img/enigma/mathnews-desktop-lg.png); }
-.velocity-experience .preview-container { background-image: url(/img/enigma/velocity-desktop-lg.png); }
+    &:after { background-color: @gray; }
+  }
 
-/*
-.wanderable-experience { background-color: #047878; background-image: none;}
-.cusec-experience { background-color: #174f5e; background-image: none;}
-.indochino-experience { background-color: #4a3141; background-image: none;}
-.mathnews-experience { background-color: #58092c; background-image: none;}
-.velocity-experience { background-color: #144553; background-image: none;}
-*/
-
-.mathnews-experience {
-  .preview-container {
-    background-position: 0 center;
+  a {
+    color: inherit;
   }
 }
 
+// preview
 .preview-container {
   padding: 0;
   height: 100%;
@@ -142,29 +281,74 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   //background-position: 50% top;
+  overflow: hidden;
 }
 
-// timeline
-.timeline-container {
+.external-link-icon {
+  font-size: 5em;
   position: absolute;
-  height: 100%;
-  width: 5px;
-  margin-left: 60px;
-  background: @gray-lighter;
+  z-index: 1030;
 }
 
-.timeline-marker {
-  height: 20px;
-  width: 20px;
-  border: 3px solid @brand-secondary;
-  border-radius: 50%;
-  margin-left: -8px;
-  margin-top: 15px;
-  background: @gray-lighter;
+.experience-preview-img {
+  .transition(.2s all ease-in-out);
+  -webkit-filter: grayscale(1); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%);
+  filter: gray; filter: grayscale(100%);
+  filter: url(desaturate.svg#greyscale);
+  height: 100%;
+  .scale(1.01, 1.01);
+  .center-block;
+}
+
+// experience container hover state
+.experience-container:hover {
+  background-image: none;
+  color: @white;
+
+  .hr-decorative {
+    border-color: @white;
+    &:after { background-color: @white; }
+  }
+
+  a {
+    color: @brand-fiftly;
+  }
+
+  .experience-text-content {
+    #gradient > .radial(#222; @black);
+  }
+
+  .experience-preview-img {
+    -webkit-filter: grayscale(0); -webkit-filter: grayscale(0%); -moz-filter: grayscale(0%);
+    filter: gray; filter: grayscale(0%);
+    filter: url(desaturate.svg#greyscale);
+    .scale(1, 1);
+  }
+}
+
+// text
+.experience-text-content {
+  display: table;
+  padding: 0 40px;
+  width: 50%;
+  height: 100%;
+  background: @black;
+}
+
+.experience-text-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.mathnews-experience {
+  .preview-container {
+    background-position: 0 center;
+  }
 }
 
 // footer
 .site-footer {
   background: @black;
+  color: @gray-lightest;
   padding: 20px 0 10px 0;
 }
