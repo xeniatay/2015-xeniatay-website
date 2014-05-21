@@ -5951,13 +5951,23 @@ body {
   transition: 0.2s width ease-in-out;
   display: inline-block;
   text-align: center;
-  margin: 0;
-  width: 19%;
+  margin: 0 5%;
+  width: 9%;
   color: #3f0b1b;
 }
 @media (max-width: 479px) {
   .some-icon-link {
     width: 30%;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .some-icon-link {
+    width: 19%;
+  }
+}
+@media (max-width: 767px) {
+  .some-icon-link {
+    margin: 0;
   }
 }
 .some-icon-link:after {

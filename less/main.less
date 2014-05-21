@@ -163,12 +163,20 @@ body {
   .transition(.2s width ease-in-out);
   display: inline-block;
   text-align: center;
-  margin: 0;
-  width: 19%;
+  margin: 0 5%;
+  width: 9%;
   color: @brand-primary;
 
   @media @phone {
     width: 30%;
+  }
+
+  @media @tablet {
+    width: 19%;
+  }
+
+  @media @lt-desktop {
+    margin: 0;
   }
 
   &:after {
