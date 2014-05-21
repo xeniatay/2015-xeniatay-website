@@ -6086,6 +6086,12 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+@media (min-width: 1800px) {
+  .experience-preview-img {
+    height: auto;
+    width: 100%;
+  }
+}
 .experience-container:hover {
   background-image: none;
   color: #ffffff;
