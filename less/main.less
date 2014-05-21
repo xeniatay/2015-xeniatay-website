@@ -22,6 +22,16 @@ p {
   line-height: 1.8;
 }
 
+a {
+  color: @white;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: @brand-fiftly;
+  }
+}
+
 // decorative
 
 .hr-decorative {
@@ -155,6 +165,7 @@ body {
   text-align: center;
   margin: 0;
   width: 19%;
+  color: @brand-primary;
 
   @media @phone {
     width: 30%;
@@ -242,7 +253,7 @@ body {
   }
 
   @media @tablet {
-    height: 250px;
+    height: 280px;
   }
 
   @media @desktop {

@@ -5816,6 +5816,14 @@ button.close {
 p {
   line-height: 1.8;
 }
+a {
+  color: #ffffff;
+}
+a:hover,
+a:active,
+a:focus {
+  color: #ffd462;
+}
 .hr-decorative {
   border-color: #7a1631;
   margin-bottom: 40px;
@@ -5945,6 +5953,7 @@ body {
   text-align: center;
   margin: 0;
   width: 19%;
+  color: #3f0b1b;
 }
 @media (max-width: 479px) {
   .some-icon-link {
@@ -6019,7 +6028,7 @@ body {
 }
 @media (min-width: 480px) and (max-width: 767px) {
   .experience-container {
-    height: 250px;
+    height: 280px;
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
