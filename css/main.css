@@ -5946,7 +5946,7 @@ body {
     background-size: contain;
   }
 }
-.some-icon-link {
+.social-icon-link {
   -webkit-transition: 0.2s width ease-in-out;
   transition: 0.2s width ease-in-out;
   display: inline-block;
@@ -5956,21 +5956,21 @@ body {
   color: #3f0b1b;
 }
 @media (max-width: 479px) {
-  .some-icon-link {
+  .social-icon-link {
     width: 30%;
   }
 }
 @media (min-width: 480px) and (max-width: 767px) {
-  .some-icon-link {
+  .social-icon-link {
     width: 19%;
   }
 }
 @media (max-width: 767px) {
-  .some-icon-link {
+  .social-icon-link {
     margin: 0;
   }
 }
-.some-icon-link:after {
+.social-icon-link:after {
   -webkit-transition: 0.5s opacity ease-in-out;
   transition: 0.5s opacity ease-in-out;
   content: attr(title);
@@ -5980,32 +5980,32 @@ body {
   font-size: 0.9em;
   letter-spacing: 1px;
 }
-.some-icon-link:hover {
+.social-icon-link:hover {
   text-decoration: none;
   color: #000000;
 }
-.some-icon-link:hover:after {
+.social-icon-link:hover:after {
   opacity: 1;
 }
-.some-icon-link:hover .some-icon {
+.social-icon-link:hover .social-icon {
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
   -o-transform: rotate(360deg);
 }
-.some-icon-wrapper {
+.social-icon-wrapper {
   display: table;
   padding: 60px 0 20px 0;
   margin: 0 auto;
   opacity: 0.3;
 }
 @media (max-width: 767px) {
-  .some-icon-wrapper {
+  .social-icon-wrapper {
     padding: 20px 0 10px;
   }
 }
-.some-icon {
+.social-icon {
   -webkit-transition-duration: 1.2s;
   -moz-transition-duration: 1.2s;
   -o-transition-duration: 1.2s;

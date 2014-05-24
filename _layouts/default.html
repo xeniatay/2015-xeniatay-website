@@ -77,7 +77,7 @@ experiences:
             {% if exp.img %}
             <div class="preview-container {% if thecycle == 'odd' %} pull-right {% else %} pull-left {% endif %}">
               <a href="{{ exp.link }}" title="{{ exp.title }}">
-                <img class="experience-preview-img" src="{{ exp.img }}" alt="{{ exp.img-alt }}">
+                <img class="experience-preview-img {{ exp.classname }}-preview-img" src="{{ exp.img }}" alt="{{ exp.img-alt }}">
               </a>
             </div>
             {% endif %}
