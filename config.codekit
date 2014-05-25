@@ -29,15 +29,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/_layouts\/default.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/_layouts\/default.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/_layouts\/page.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -2061,15 +2052,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/css\/main.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/css\/main.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/img\/burried.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2103,28 +2085,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/enigma\/hvz.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 70645,
-		"inputAbbreviatedPath": "\/img\/enigma\/hvz.png",
-		"outputAbbreviatedPath": "\/img\/enigma\/hvz.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/enigma\/indochino-bg.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 91965,
-		"inputAbbreviatedPath": "\/img\/enigma\/indochino-bg.png",
-		"outputAbbreviatedPath": "\/img\/enigma\/indochino-bg.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/enigma\/indochino-desktop-lg.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2132,17 +2092,6 @@
 		"initialSize": 6.29146e+06,
 		"inputAbbreviatedPath": "\/img\/enigma\/indochino-desktop-lg.png",
 		"outputAbbreviatedPath": "\/img\/enigma\/indochino-desktop-lg.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/enigma\/indochino.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 319901,
-		"inputAbbreviatedPath": "\/img\/enigma\/indochino.png",
-		"outputAbbreviatedPath": "\/img\/enigma\/indochino.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2158,17 +2107,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/enigma\/velocity-bg.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 108265,
-		"inputAbbreviatedPath": "\/img\/enigma\/velocity-bg.png",
-		"outputAbbreviatedPath": "\/img\/enigma\/velocity-bg.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/enigma\/velocity-desktop-lg.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2180,28 +2118,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/enigma\/velocity.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 67208,
-		"inputAbbreviatedPath": "\/img\/enigma\/velocity.png",
-		"outputAbbreviatedPath": "\/img\/enigma\/velocity.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/enigma\/wanderable-bg.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 122456,
-		"inputAbbreviatedPath": "\/img\/enigma\/wanderable-bg.png",
-		"outputAbbreviatedPath": "\/img\/enigma\/wanderable-bg.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/enigma\/wanderable-desktop-lg.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2209,61 +2125,6 @@
 		"initialSize": 1.42143e+06,
 		"inputAbbreviatedPath": "\/img\/enigma\/wanderable-desktop-lg.png",
 		"outputAbbreviatedPath": "\/img\/enigma\/wanderable-desktop-lg.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/enigma\/wanderable-desktop.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 152186,
-		"inputAbbreviatedPath": "\/img\/enigma\/wanderable-desktop.png",
-		"outputAbbreviatedPath": "\/img\/enigma\/wanderable-desktop.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/enigma\/wanderable-ipad.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 24656,
-		"inputAbbreviatedPath": "\/img\/enigma\/wanderable-ipad.png",
-		"outputAbbreviatedPath": "\/img\/enigma\/wanderable-ipad.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/enigma\/wanderable-iphone.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 11416,
-		"inputAbbreviatedPath": "\/img\/enigma\/wanderable-iphone.png",
-		"outputAbbreviatedPath": "\/img\/enigma\/wanderable-iphone.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/enigma\/wanderable.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 340398,
-		"inputAbbreviatedPath": "\/img\/enigma\/wanderable.png",
-		"outputAbbreviatedPath": "\/img\/enigma\/wanderable.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/enigma\/waterlux-talk.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 15769,
-		"inputAbbreviatedPath": "\/img\/enigma\/waterlux-talk.png",
-		"outputAbbreviatedPath": "\/img\/enigma\/waterlux-talk.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2286,6 +2147,17 @@
 		"initialSize": 484948,
 		"inputAbbreviatedPath": "\/img\/header-bg.png",
 		"outputAbbreviatedPath": "\/img\/header-bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/hvz.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 520508,
+		"inputAbbreviatedPath": "\/img\/hvz.jpg",
+		"outputAbbreviatedPath": "\/img\/hvz.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
