@@ -5908,7 +5908,7 @@ body {
   height: 100%;
 }
 .header-bg {
-  background-image: url(/img/enigma/header-bg.png);
+  background-image: url(../img/enigma/header-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
