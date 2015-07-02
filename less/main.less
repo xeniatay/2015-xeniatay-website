@@ -1,25 +1,33 @@
 @import "../bower_components/bootstrap/less/bootstrap";
 @import "_variables_override";
-@import "_parallax-scroll";
 
-// layout
-//
+/*** Layout ***/
+html,
 body {
-  @media @phone {
-    font-size: 8px;
-  }
+  height: 100%;
+  font-family: @font-family-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
 
-  @media @tablet {
+body {
+  background: @brand-neutral;
+
+  @media @phone {
     font-size: 10px;
   }
 
-  @media @desktop {
+  @media @tablet {
     font-size: 12px;
+  }
+
+  @media @desktop {
+    font-size: 15px;
   }
 }
 
 p {
-  line-height: 1.8;
+  line-height: 1.2;
 }
 
 a {
@@ -28,361 +36,158 @@ a {
   &:hover,
   &:active,
   &:focus {
-    color: @brand-fiftly;
+    color: @brand-light;
   }
 }
 
-// decorative
+/*** Type ***/
 
-.hr-decorative {
-  border-color: @brand-secondary;
-  margin-bottom: 40px;
-  width: 100px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: @font-family-sans-serif;
+}
 
-  @media @lt-desktop-lg {
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+/*** Sidebar ***/
+
+@sidebar-gradient: {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ce9b86+0,b57365+19,9c4b46+37,7b3032+59,49161c+81,1f070b+100 */
+  background: #1f070b; /* Old browsers */
+  background: -moz-linear-gradient(35deg,  #ce9b86 0%, #b57365 19%, #9c4b46 37%, #7b3032 59%, #49161c 81%, #1f070b 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#ce9b86), color-stop(19%,#b57365), color-stop(37%,#9c4b46), color-stop(59%,#7b3032), color-stop(81%,#49161c), color-stop(100%,#1f070b)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(35deg,  #ce9b86 0%,#b57365 19%,#9c4b46 37%,#7b3032 59%,#49161c 81%,#1f070b 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(35deg,  #ce9b86 0%,#b57365 19%,#9c4b46 37%,#7b3032 59%,#49161c 81%,#1f070b 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(35deg,  #ce9b86 0%,#b57365 19%,#9c4b46 37%,#7b3032 59%,#49161c 81%,#1f070b 100%); /* IE10+ */
+  background: linear-gradient(35deg,  #ce9b86 0%,#b57365 19%,#9c4b46 37%,#7b3032 59%,#49161c 81%,#1f070b 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce9b86', endColorstr='#1f070b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+};
+
+// From: http://www.gradient-animator.com/
+@sidebar-animated: {
+  background: linear-gradient(222deg, #0036ff, #ff0000, #ff00fc);
+  background-size: 600% 600%;
+
+  -webkit-animation: sidebargradient2 10s ease infinite;
+  -moz-animation: sidebargradient2 10s ease infinite;
+  animation: sidebargradient2 10s ease infinite;
+};
+
+
+@-webkit-keyframes sidebargradient2 {
+    0%{background-position:90% 0%}
+    50%{background-position:11% 100%}
+    100%{background-position:90% 0%}
+}
+@-moz-keyframes sidebargradient2 {
+    0%{background-position:90% 0%}
+    50%{background-position:11% 100%}
+    100%{background-position:90% 0%}
+}
+@keyframes sidebargradient2 {
+    0%{background-position:90% 0%}
+    50%{background-position:11% 100%}
+    100%{background-position:90% 0%}
+}
+
+.main-sidebar {
+  @sidebar-gradient();
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 30%;
+  color: @white;
 
   &:after {
-    content: '';
+    position: absolute;
     display: block;
     width: 100%;
-    height: 1px;
-    margin-top: 1px;
-    background-color: @brand-secondary;
+    height: 100%;
+    content: ' ';
+    @sidebar-animated();
+    opacity: 0.1;
   }
 }
 
-// type
-h2 {
-  font-size: 30px;
-  letter-spacing: 2px;
+.sidebar-content {
+  float: right;
+  margin-right: 50px;
+  max-width: 220px;
+}
+
+.xenia-tay {
+  margin-top: 1.5em;
+  letter-spacing: 1px;
   text-transform: uppercase;
+  font-size: 2.5em;
 
-  @media @phone {
-    font-size: 12px;
-  }
+  .dropcaps {
+    font-size: 1.2em;
 
-  @media @tablet {
-    font-size: 15px;
-  }
-
-  @media @desktop {
-    font-size: 20px;
+    &:first-child {
+      padding-right: 1px;
+    }
   }
 }
 
-h3 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 30px;
+.about-title {
+  margin-top: 80px;
+}
+
+.about-details-wrapper,
+.about-links {
+  margin-top: 60px;
+}
+
+/*** Content ***/
+.main-container {
+  height: 100%;
+}
+
+.content-wrapper {
+  float: left;
+  padding: 40px;
+  height: 100%;
+  width: 70%;
+  overflow-y: scroll;
+  box-sizing: border-box;
+}
+
+.portfolio-item {
+  width: 400px;
+}
+
+.item-title,
+.item-desc {
+  margin: 0;
   line-height: 1.5;
-
-  @media @phone {
-    font-size: 12px;
-  }
-
-  @media @tablet {
-    font-size: 15px;
-  }
-
-  @media @desktop {
-    font-size: 20px;
-  }
 }
 
-h4 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-  line-height: 3;
-
-  @media @phone {
-    font-size: 10px;
-  }
-
-  @media @tablet {
-    font-size: 13px;
-  }
-
-  @media @desktop {
-    font-size: 15px;
-  }
+.item-title {
+  font-weight: bold;
 }
 
-// layout
-//
-
-// header
-html,
-body {
-  height: 100%;
-}
-
-.header-bg {
-  background-image: url(../img/enigma/header-bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-
-  @media @phone {
-    height: 420px;
-  }
-
-  @media @tablet {
-    height: 600px;
-  }
-}
-
-.header-content {
-  display: table;
-  height: 100%;
+.item-img {
+  padding: 10px 0;
   width: 100%;
 }
 
-.header-content-wrapper {
-  display: table-cell;
-  vertical-align: middle;
+.col {
+  float: left;
 }
 
-.site-title {
-  height: 73px;
-  overflow: hidden;
-  text-indent: -10000px;
-  background-image: url(../img/enigma/XENIA-TAY.png);
-  background-repeat: no-repeat;
-  background-size: 533px 73px;
-  background-position: center;
+.hardedge .col {
+  &:last-child { padding-left: 17px; }
 
-  @media @lt-desktop {
-    background-size: contain;
+  .item-img {
+    height: 205px;
+    width: auto;
   }
 }
 
-// SoMe icons
-.social-icon-link {
-  .transition(.2s width ease-in-out);
-  display: inline-block;
-  text-align: center;
-  margin: 0 5%;
-  width: 9%;
-  color: @brand-primary;
-
-  @media @phone {
-    width: 30%;
-  }
-
-  @media @tablet {
-    width: 19%;
-  }
-
-  @media @lt-desktop {
-    margin: 0;
-  }
-
-  &:after {
-    .transition(.5s opacity ease-in-out);
-    content: attr(title);
-    opacity: 0;
-    display: block;
-    text-transform: uppercase;
-    font-size: 0.9em;
-    letter-spacing: 1px;
-  }
-
-  &:hover {
-    text-decoration: none;
-    color: @black;
-
-    &:after {
-      opacity: 1;
-    }
-
-    .social-icon {
-      .rotate(360deg);
-    }
-  }
-
-}
-
-.social-icon-wrapper {
-  display: table;
-  padding: 60px 0 20px 0;
-  margin: 0 auto;
-  opacity: 0.3;
-
-  @media @lt-desktop {
-    padding: 20px 0 10px;
-  }
-}
-
-.social-icon {
-  .rotate-setup(1.2s);
-  display: table-cell;
-  vertical-align: middle;
-}
-
-// icon rotation animation
-.rotate-setup(@dur: 0.8s) {
-    -webkit-transition-duration: @dur;
-    -moz-transition-duration: @dur;
-    -o-transition-duration: @dur;
-    transition-duration: @dur;
-
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    transition-property: transform;
-
-    overflow: hidden;
-}
-
-.rotate (@deg: 180deg) {
-    -webkit-transform: rotate(@deg);
-    -moz-transform: rotate(@deg);
-    -o-transform: rotate(@deg);
-}
-
-// experience section
-.page-experience {
-  margin-bottom: 40px;
-  height: 100%;
-}
-
-.experience-container {
-  .transition(.2s all ease-in-out);
-  position: relative;
-  height: 75%;
-  background-repeat: repeat;
-  background-color: @black;
-  color: @gray;
-
-  @media @phone {
-    height: 150px;
-  }
-
-  @media @tablet {
-    height: 280px;
-  }
-
-  @media @desktop {
-    height: 60%;
-  }
-
-  &.even {
-    .preview-container {
-      .pull-left;
-    }
-  }
-
-  .hr-decorative {
-    margin-bottom: 20px;
-    margin-left: 0;
-    width: 50px;
-    border-color: @gray;
-
-    @media @lt-desktop {
-      margin-bottom: 15px;
-    }
-
-    &:after { background-color: @gray; }
-  }
-
-  a {
-    color: inherit;
-  }
-}
-
-// preview
-.preview-container {
-  padding: 0;
-  height: 100%;
+.equal-split-col {
   width: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  //background-position: 50% top;
-  overflow: hidden;
+  &.col-1 { padding-right: 2.5%; }
+  &.col-2 { padding-left: 2.5%; }
 }
 
-.external-link-icon {
-  font-size: 5em;
-  position: absolute;
-  z-index: 1030;
-}
-
-.experience-preview-img {
-  .transition(.2s all ease-in-out);
-  -webkit-filter: grayscale(1); -webkit-filter: grayscale(100%); -moz-filter: grayscale(100%);
-  filter: gray; filter: grayscale(100%);
-  filter: url(desaturate.svg#greyscale);
-  height: 100%;
-  .scale(1.01, 1.01);
-  .center-block;
-
-  @media (min-width: 1350px) {
-    height: auto;
-    width: 100%;
-  }
-}
-
-// experience container hover state
-.experience-container:hover {
-  .experience-container-highlight;
-}
-
-.experience-container-highlight {
-  background-image: none;
-  color: @white;
-
-  .hr-decorative {
-    border-color: @white;
-    &:after { background-color: @white; }
-  }
-
-  a {
-    color: @brand-fiftly;
-  }
-
-  .experience-text-content {
-    #gradient > .radial(#222; @black);
-  }
-
-  .experience-preview-img {
-    -webkit-filter: grayscale(0); -webkit-filter: grayscale(0%); -moz-filter: grayscale(0%);
-    filter: gray; filter: grayscale(0%);
-    filter: url(desaturate.svg#greyscale);
-    .scale(1, 1);
-  }
-}
-
-@media @lt-desktop {
-  .experience-container {
-    .experience-container-highlight;
-  }
-}
-
-// text
-.experience-text-content {
-  display: table;
-  padding: 0 40px;
-  width: 50%;
-  height: 100%;
-  background: @black;
-}
-
-.experience-text-wrapper {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.mathnews-experience {
-  .preview-container {
-    background-position: 0 center;
-  }
-}
-
-// footer
-.site-footer {
-  background: @black;
-  color: @gray-lightest;
-  padding: 20px 0 10px 0;
+.delaunay .col {
+  .equal-split-col();
 }

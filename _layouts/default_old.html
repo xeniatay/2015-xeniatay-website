@@ -47,22 +47,46 @@ experiences:
   {% include head.html %}
 
     <body>
-      <div class="main-container">
-        {% include sidebar.html %}
 
-        <div class="content-wrapper">
-          {% comment %}{% include portfolio/hardedge.html %}{% endcomment %}
-          {% comment %}{% include portfolio/delaunay.html %}{% endcomment %}
-          {% comment %}{% include portfolio/harris.html %}{% endcomment %}
+    {% include header.html %}
 
-          <section class="portfolio-item clearfix paperbags">
-            <p class="item-title">Two Paperbags - Black and White Study</p>
-            <p class="item-desc">Acrylic on Terraskin</p>
-            <img class="item-img" src="/img/enigma/paperbag-1.jpg" alt="Paperbags">
-          </section>
-        </div>
+    <div class="page-experience container-fluid">
+      {% for exp in page.experiences %}
+        {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
 
-        {% include footer.html %}
-      </div>
+        <div class="row experience-container {{ exp.classname }}-experience">
+
+            {% if exp.img %}
+            <div class="experience-text-content {% if thecycle == 'odd' %} pull-left {% else %} pull-right {% endif %}">
+            {% else %}
+            <div class="col-xs-12 experience-text-content">
+            {% endif %}
+
+              <div class="experience-text-wrapper">
+                <h3 class="experience-title">{{ exp.title }}</h3>
+                <p class="experience-date">
+                  <em><small>{{ exp.date-and-loc }}</small></em>
+                </p>
+                <p class="experience-desc hidden-xs">
+                  {{ exp.desc }}
+                </p>
+              </div>
+
+            </div>
+
+            {% if exp.img %}
+            <div class="preview-container {% if thecycle == 'odd' %} pull-right {% else %} pull-left {% endif %}">
+              <a href="{{ exp.link }}" title="{{ exp.title }}">
+                  <img class="experience-preview-img {{ exp.classname }}-preview-img" src="{{ site.baseurl }}{{ exp.img }}" alt="{{ exp.img-alt }}">
+              </a>
+            </div>
+            {% endif %}
+          </div>
+
+      {% endfor %}
+
+      {% include footer.html %}
+    </div>
+
     </body>
 </html>
